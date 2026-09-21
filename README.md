@@ -16,6 +16,18 @@ data, lookups and integration, please use the
 [![pypi Version](https://img.shields.io/pypi/v/spacy-lookups-data.svg?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/spacy-lookups-data/)
 [![conda Version](https://img.shields.io/conda/vn/conda-forge/spacy-lookups-data.svg?style=flat-square&logo=conda-forge&logoColor=white)](https://anaconda.org/conda-forge/spacy-lookups-data)
 
+## Release
+
+This is a fork of explosion's spacy-lookups-data.
+To make a new release of this fork on our own package feed,
+run `./bin/release.sh {version_tag}`. This will:
+
+- Update version number in [about.py](spacy_lookups_data/about.py)
+- Commit new version number to master
+- Create new git tag with version on master
+- Build dist for the new version
+- Upload new version dist to our package feed using `twine`
+
 ## FAQ
 
 ### Why does this exist?
